@@ -30,6 +30,8 @@
    python word_to_excel.py
    ```
 4. 处理完成后，结果文件在 `结果` 文件夹下，原 Word 文件自动移至 `backup_folder`。
+5. 同级目录log文件。
+6. 空格键可以暂停，esc退出程序
 
 ### 4. 结果说明
 - 每个 Word 文件对应 Excel/CSV 中一行，字段为 `keywords` 配置。
@@ -38,7 +40,7 @@
 - 所有符号映射、对号、空方块均可在 `config.json` 灵活扩展。
 
 ### 5. 常见问题
-- 如遇符号未被识别，请根据调试输出补全 `config.json` 的 `tick_symbols` 或 `symbol_maps`。
+- 如遇符号未被识别，请根据调试输出补全 `config.json` 的 `tick_symbols` 或 `symbol_maps`。word中wingdings类型插入符号，python-doc识别有一些问题，个别是因为不是字符，而是图片无法复制到txt中无法识别。
 - 支持多种对号、空方块、√、✔、☑、、ü 等符号。
 - 仅支持 .docx 格式，暂不支持图片、控件等非文本内容。
 
