@@ -1,6 +1,7 @@
 {
   "source_folder": "./源数据",
   "backup_folder": "./备份数据",
+  "log_path": "./process.log",
   "excel_path": "./数据.xlsx",
   "keywords": [
     "微生物名称",
